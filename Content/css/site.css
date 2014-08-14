@@ -1,0 +1,16 @@
+.images{
+    text-align: center;
+}
+
+.images img{
+    height: 329px;
+    width: 329px;
+}
+
+.margin_top{
+    margin-top: 60px;
+}
+
+.name{
+    text-align: center;
+}

@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "title": "Patton",
+        "weight": 756,
+        "size": "Small",
+        "photo": "Content/img/pizza5.png",
+        "about": "officia sit et ea laborum velit eu quis cillum culpa",
+        "components": [
+            {
+                "title": "voluptate",
+                "weight": 38,
+                "cost": 1046
+            },
+            {
+                "title": "veniam",
+                "weight": 22,
+                "cost": 1047
+            },
+            {
+                "title": "sit",
+                "weight": 16,
+                "cost": 1039
+            },
+            {
+                "title": "esse",
+                "weight": 10,
+                "cost": 1035
+            },
+            {
+                "title": "dolore",
+                "weight": 19,
+                "cost": 955
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Terri",
+        "weight": 818,
+        "size": "Small",
+        "photo": "Content/img/pizza1.png",
+        "about": "laboris mollit proident consectetur labore fugiat cillum minim occaecat",
+        "components": [
+            {
+                "title": "velit",
+                "weight": 20,
+                "cost": 1021
+            },
+            {
+                "title": "commodo",
+                "weight": 39,
+                "cost": 968
+            },
+            {
+                "title": "aliquip",
+                "weight": 31,
+                "cost": 965
+            },
+            {
+                "title": "non",
+                "weight": 16,
+                "cost": 949
+            },
+            {
+                "title": "qui",
+                "weight": 40,
+                "cost": 944
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Patel",
+        "weight": 714,
+        "size": "Large",
+        "photo": "Content/img/pizza4.png",
+        "about": "consectetur et nostrud velit excepteur sunt amet sunt quis excepteur",
+        "components": [
+            {
+                "title": "proident",
+                "weight": 33,
+                "cost": 903
+            },
+            {
+                "title": "ullamco",
+                "weight": 19,
+                "cost": 1023
+            },
+            {
+                "title": "officia",
+                "weight": 35,
+                "cost": 1093
+            },
+            {
+                "title": "qui",
+                "weight": 11,
+                "cost": 1015
+            },
+            {
+                "title": "dolore",
+                "weight": 37,
+                "cost": 1071
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Bernadine",
+        "weight": 109,
+        "size": "Large",
+        "photo": "Content/img/pizza3.png",
+        "about": "Lorem ipsum aliqua ex dolore enim ullamco ut tempor officia",
+        "components": [
+            {
+                "title": "consequat",
+                "weight": 26,
+                "cost": 948
+            },
+            {
+                "title": "mollit",
+                "weight": 15,
+                "cost": 973
+            },
+            {
+                "title": "aliqua",
+                "weight": 35,
+                "cost": 1033
+            },
+            {
+                "title": "eiusmod",
+                "weight": 13,
+                "cost": 952
+            },
+            {
+                "title": "id",
+                "weight": 32,
+                "cost": 982
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Avis",
+        "weight": 675,
+        "size": "Large",
+        "photo": "Content/img/pizza3.png",
+        "about": "consequat veniam pariatur est voluptate eiusmod eiusmod cillum deserunt ut",
+        "components": [
+            {
+                "title": "Lorem",
+                "weight": 25,
+                "cost": 1063
+            },
+            {
+                "title": "aute",
+                "weight": 11,
+                "cost": 1003
+            },
+            {
+                "title": "sint",
+                "weight": 29,
+                "cost": 1035
+            },
+            {
+                "title": "consectetur",
+                "weight": 37,
+                "cost": 1054
+            },
+            {
+                "title": "ad",
+                "weight": 40,
+                "cost": 911
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Deanne",
+        "weight": 779,
+        "size": "Small",
+        "photo": "Content/img/pizza3.png",
+        "about": "adipisicing est adipisicing eu do quis esse ad magna adipisicing",
+        "components": [
+            {
+                "title": "labore",
+                "weight": 34,
+                "cost": 989
+            },
+            {
+                "title": "elit",
+                "weight": 39,
+                "cost": 1036
+            },
+            {
+                "title": "Lorem",
+                "weight": 38,
+                "cost": 909
+            },
+            {
+                "title": "ea",
+                "weight": 18,
+                "cost": 1074
+            },
+            {
+                "title": "incididunt",
+                "weight": 28,
+                "cost": 954
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Lang",
+        "weight": 419,
+        "size": "Large",
+        "photo": "Content/img/pizza2.png",
+        "about": "ut culpa est veniam velit non laboris commodo sint commodo",
+        "components": [
+            {
+                "title": "reprehenderit",
+                "weight": 30,
+                "cost": 1007
+            },
+            {
+                "title": "deserunt",
+                "weight": 35,
+                "cost": 994
+            },
+            {
+                "title": "magna",
+                "weight": 37,
+                "cost": 1057
+            },
+            {
+                "title": "sunt",
+                "weight": 15,
+                "cost": 1013
+            },
+            {
+                "title": "tempor",
+                "weight": 31,
+                "cost": 1087
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Carlene",
+        "weight": 293,
+        "size": "Large",
+        "photo": "Content/img/pizza1.png",
+        "about": "eiusmod veniam consequat excepteur labore deserunt non aute laboris",
+        "components": [
+            {
+                "title": "ipsum",
+                "weight": 12,
+                "cost": 976
+            },
+            {
+                "title": "proident",
+                "weight": 33,
+                "cost": 913
+            },
+            {
+                "title": "anim",
+                "weight": 30,
+                "cost": 1084
+            },
+            {
+                "title": "sint",
+                "weight": 21,
+                "cost": 1058
+            },
+            {
+                "title": "sunt",
+                "weight": 27,
+                "cost": 932
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Ofelia",
+        "weight": 740,
+        "size": "Medium",
+        "photo": "Content/img/pizza4.png",
+        "about": "quis cillum elit occaecat eu nulla sint deserunt nostrud amet",
+        "components": [
+            {
+                "title": "ea",
+                "weight": 32,
+                "cost": 981
+            },
+            {
+                "title": "ullamco",
+                "weight": 14,
+                "cost": 1041
+            },
+            {
+                "title": "elit",
+                "weight": 10,
+                "cost": 927
+            },
+            {
+                "title": "nostrud",
+                "weight": 28,
+                "cost": 1061
+            },
+            {
+                "title": "adipisicing",
+                "weight": 31,
+                "cost": 971
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Connie",
+        "weight": 516,
+        "size": "Small",
+        "photo": "Content/img/pizza5.png",
+        "about": "cillum enim qui eu reprehenderit ipsum duis cillum consequat magna",
+        "components": [
+            {
+                "title": "enim",
+                "weight": 13,
+                "cost": 956
+            },
+            {
+                "title": "eiusmod",
+                "weight": 30,
+                "cost": 944
+            },
+            {
+                "title": "elit",
+                "weight": 37,
+                "cost": 913
+            },
+            {
+                "title": "velit",
+                "weight": 22,
+                "cost": 953
+            },
+            {
+                "title": "dolore",
+                "weight": 39,
+                "cost": 1036
+            }
+        ]
+    }
+]

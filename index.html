@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="pizzaDeliveryService">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="Content/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/css/site.css" rel="stylesheet">
+    <link href="Content/css/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <title>Index</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
+                        ng-click="navCollapsed = !navCollapsed">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BestPizza</a>
+            </div>
+            <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/show_all">Home</a></li>
+                    <li><a href="#/order_history">Order history</a></li>
+                    <li><a href="#/cart">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container margin_top">
+        <div ng-view></div>
+    </div>
+
+</body>
+</html>
+<script src="Scripts/libs/jquery-2.1.1.min.js"></script>
+<script src="Scripts/libs/angular.js"></script>
+<script src="Scripts/libs/angular-route.js"></script>
+<script src="Scripts/libs/ui-bootstrap-tpls-0.11.0.min.js"></script>
+<script src="Scripts/modules/app.js"></script>
+<script src="Scripts/services/pizzaFactory.js"></script>
+<script src="Scripts/services/componentsFactory.js"></script>
+<script src="Scripts/services/orderFactory.js"></script>
+<script src="Scripts/services/cartFactory.js"></script>
+<script src="Scripts/controllers/pizzas-controller.js"></script>
+<script src="Scripts/controllers/new-pizza-controller.js"></script>
+<script src="Scripts/controllers/order-history-controller.js"></script>
+<script src="Scripts/controllers/cart-controller.js"></script>
+<script src="Scripts/filters/name-filter.js"></script>
+<script src="Scripts/directives/hide-button.js"></script>
