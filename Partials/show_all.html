@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="panel-heading col-md-3">
+            <input type="search" class="form-control" ng-model="pizzaTitle" placeholder="Search" style="float: left; width: 85%">
+        </div>
+        <div class="panel-heading col-md-3">
+            <a href="#/create_new" class="btn btn-primary">
+                Create your own pizza
+        </a>
+        </div>
+        <div class="row"></div>
+        <div ng-repeat="pizza in pizzas track by pizza.id | nameFilter:pizzaTitle">
+            <div class="col-xs-6">
+                <div class="thumbnail">
+                    <p class="name">{{pizza.title}}</p>
+                    <div class="images">
+                    <img ng-src="{{pizza.photo}}" alt="">
+                    </div>
+                    <div class="caption text-center">
+                        <p class="cost">{{computeCost(pizza)}}</p>
+                        <p class="about">{{pizza.about}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
