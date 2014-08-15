@@ -13,9 +13,9 @@ angular.module('pizzaDeliveryService').controller('PizzasCtrl', function ($scope
     }
 
     $scope.checkEntries = function (pizza) {
-        var title = pizza.title;
+        var id = pizza.id;
         for (var i = 0, length = $scope.cart.pizzas.length; i < length; i++) {
-            if (title === $scope.cart.pizzas[i].title) {
+            if (id === $scope.cart.pizzas[i].id) {
                 $scope.cart.pizzas[i].quantity += pizza.quantity;
                 return $scope.cart;
             }
@@ -37,5 +37,6 @@ angular.module('pizzaDeliveryService').controller('PizzasCtrl', function ($scope
         pizza.quantity = $scope.quantity[index];
         var newCart = $scope.checkEntries(pizza);
         cart.addToCart(newCart);
+        jAlert(pizza.quantity + pizza.title +' added to cart')
     }
 });

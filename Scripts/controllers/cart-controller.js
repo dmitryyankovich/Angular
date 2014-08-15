@@ -19,6 +19,17 @@ angular.module('pizzaDeliveryService').controller('CartCtrl', function ($scope, 
         return cost;
     };
 
+    $scope.deleteFromCart = function(pizza) {
+        var id = pizza.id;
+        for(var i = 0, length = $scope.cart.pizzas.length;i < length; i++){
+            if(id === $scope.cart.pizzas[i].id){
+                 $scope.cart.pizzas.splice(i,1);
+                break;
+            }
+        }
+        cart.addToCart($scope.cart);
+    };
+
     $scope.saveOrder = function () {
         $scope.cart.id = orders.orderMax();
         $scope.cart.customer = 'Carlene';

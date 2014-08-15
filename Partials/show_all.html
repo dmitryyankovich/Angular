@@ -9,7 +9,7 @@
             </a>
         </div>
         <div class="row"></div>
-        <div ng-repeat="pizza in pizzas track by pizza.id | nameFilter:pizzaTitle">
+        <div ng-repeat="pizza in pizzas | nameFilter:pizzaTitle track by pizza.id">
             <div class="col-xs-6">
                 <div class="thumbnail">
                     <p class="name">{{pizza.title}}</p>
@@ -21,7 +21,7 @@
                         <p class="about">{{pizza.about}}</p>
                     </div>
                     <input ng-model="quantity[$index]" class="span1" type="number" min="1">
-                    <button type="button" class="btn btn-primary" ng-click="addToCart(pizza,$index)" hide-button="indexArray[$index]" data-hide-text="Added">Add to cart</button>
+                    <button type="button" class="btn btn-primary" ng-click="addToCart(pizza,$index)">Add to cart</button>
                 </div>
             </div>
         </div>

@@ -4,12 +4,14 @@ angular.module('pizzaDeliveryService').directive('hideButton', function () {
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
-            var text = angular.element('<span>' + attrs.hideText + '</span>');
-            text.hide();
-            element.after(text);
+
+            var button = angular.element('<button type="button"class="btn btn-danger" ng-click="delete()">Delete from pizza</button>');
+
+            button.hide();
+            element.after(button);
 
             element.click(function () {
-                text.show();
+                button.show();
                 element.hide();
             });
         }
