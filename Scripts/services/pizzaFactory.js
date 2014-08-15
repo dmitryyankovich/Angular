@@ -1,36 +1,33 @@
-(function() {
+angular.module('pizzaDeliveryService').factory('pizzas', function ($http) {
     'use strict';
 
-    angular.module('pizzaDeliveryService').factory('pizzas',function($http){
+    var pizzas = JSON.parse(localStorage.getItem('pizzas'));
+    if (!pizzas) {
+        $http.get('Content/json/pizzas.json').then(function (res) {
+            pizzas = res.data;
+            localStorage.setItem('pizzas', JSON.stringify(pizzas));
+        });
+    }
 
-        var pizzas = JSON.parse(localStorage.getItem('pizzas'));
-        if(!pizzas){
-            $http.get('Content/json/pizzas.json').then(function(res){
-                pizzas = res.data;
-                localStorage.setItem('pizzas',JSON.stringify(pizzas));
-            });
-        }
-
-        var max = 0;
-        var returnMaxId = function() {
-            for (var i = 0,length = pizzas.length; i< length; i++){
-                if(pizzas[i].id > max){
-                    max = pizzas[i].id;
-                }
+    var max = 0;
+    var returnMaxId = function () {
+        for (var i = 0, length = pizzas.length; i < length; i++) {
+            if (pizzas[i].id > max) {
+                max = pizzas[i].id;
             }
-            return ++max ;
-        };
-
-        var savePizza = function(pizz) {
-            if(pizz !== undefined && pizz!== null) {
-                localStorage.setItem('pizzas', JSON.stringify(pizz));
-            }
-        };
-
-        return{
-            pizzas: pizzas,
-            pizzasMax : returnMaxId,
-            saveNew: savePizza
         }
-    })
-})();
+        return ++max;
+    };
+
+    var savePizza = function (pizz) {
+        if (pizz !== undefined && pizz !== null) {
+            localStorage.setItem('pizzas', JSON.stringify(pizz));
+        }
+    };
+
+    return {
+        pizzas: pizzas,
+        pizzasMax: returnMaxId,
+        saveNew: savePizza
+    }
+});
